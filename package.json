@@ -1,0 +1,13 @@
+{
+  "name": "case-it-packages",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "https://github.com/firede/case-it.git",
+  "author": "Firede <firede@firede.us>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^2.10.1"
+  }
+}

@@ -1,0 +1,17 @@
+# system files
+.DS_Store
+Thumbs.db
+
+# lock files
+package-lock.json
+
+# editor settings
+.vscode
+.idea
+
+# project ignore
+node_modules
+dist
+tmp
+*.tgz
+*.log
