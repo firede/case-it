@@ -9,16 +9,19 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "compile": "tsc",
+    "flowgen": "node scripts/gen-flowtype.js",
+    "build": "yarn compile && yarn flowgen",
     "watch": "tsc -w",
     "test": "jest",
     "clean": "rimraf dist",
-    "prepare": "yarn clean && yarn compile"
+    "prepare": "yarn clean && yarn build"
   },
   "files": [
     "dist"
   ],
   "devDependencies": {
     "@types/jest": "^22.2.3",
+    "flowgen": "^1.2.2",
     "husky": "^1.0.0-rc.6",
     "jest": "^22.4.3",
     "lint-staged": "^7.1.0",
