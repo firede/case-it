@@ -5,8 +5,6 @@ import { noCaseIt } from "./no"
  */
 export function spaceCaseIt(str: string): string {
   return noCaseIt(str)
-    .replace(/[\W_]+(.|$)/g, (matches, match) => {
-      return match ? " " + match : ""
-    })
+    .replace(/[\W_]+(.|$)/g, (matches, match) => (match ? " " + match : ""))
     .trim()
 }
