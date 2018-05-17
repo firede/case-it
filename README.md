@@ -1,5 +1,9 @@
 # [![case-it](res/header.png)](https://github.com/firede/case-it)
 
+[![npm](https://img.shields.io/npm/v/case-it.svg)](https://www.npmjs.com/package/case-it)
+[![Travis](https://img.shields.io/travis/firede/case-it.svg)](https://travis-ci.org/firede/case-it)
+[![License](https://img.shields.io/npm/l/case-it.svg)](./LICENSE.md)
+
 Simple case conversion for strings, ported from [`to-case`](https://github.com/ianstormtaylor/to-case).
 
 ## Features
@@ -7,6 +11,7 @@ Simple case conversion for strings, ported from [`to-case`](https://github.com/i
 - Official support type definitions - both TypeScript and Flowtype.
 - Single package, separate modules - easy to use, tiny bundles.
 - No unnecessary detection tools - Just use `str === caseIt(str)`.
+- Zero dependencies.
 
 ## Installation
 

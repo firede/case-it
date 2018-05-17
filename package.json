@@ -1,7 +1,7 @@
 {
   "name": "case-it",
   "version": "1.0.0",
-  "description": "camel/pascal/snake/constant/kebab/space case it.",
+  "description": "{camel,constant,dot,kebab,pascal,snake,space} case it.",
   "repository": "https://github.com/firede/case-it.git",
   "author": "Firede <firede@firede.us>",
   "license": "MIT",
@@ -32,6 +32,32 @@
     "tslint-config-prettier": "^1.12.0",
     "typescript": "^2.8.3"
   },
+  "keywords": [
+    "case",
+    "camel",
+    "camelcase",
+    "camel-case",
+    "constant",
+    "constantcase",
+    "constant-case",
+    "dot",
+    "dotcase",
+    "dot-case",
+    "kebab",
+    "kebabcase",
+    "kebab-case",
+    "pascal",
+    "pascalcase",
+    "pascal-case",
+    "snake",
+    "snakecase",
+    "snake-case",
+    "space",
+    "spacecase",
+    "space-case",
+    "string",
+    "convert"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
