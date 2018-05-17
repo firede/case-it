@@ -8,16 +8,31 @@
     "compile": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "prepublish": "yarn test && yarn compile"
+    "prepublish": "yarn compile"
   },
   "devDependencies": {
     "@types/jest": "^22.2.3",
+    "husky": "^1.0.0-rc.6",
     "jest": "^22.4.3",
+    "lint-staged": "^7.1.0",
+    "prettier": "^1.12.1",
     "rimraf": "^2.6.2",
     "ts-jest": "^22.4.6",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.12.0",
     "typescript": "^2.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "jest": {
     "transform": {

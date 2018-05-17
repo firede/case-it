@@ -1,0 +1,1 @@
+export { noCaseIt } from "./no"
