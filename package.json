@@ -1,13 +1,36 @@
 {
-  "name": "case-it-packages",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "name": "case-it",
+  "description": "camel/pascal/snake/constant/kebab/space case it.",
   "repository": "https://github.com/firede/case-it.git",
   "author": "Firede <firede@firede.us>",
   "license": "MIT",
+  "scripts": {
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "prepublish": "yarn test && yarn compile"
+  },
   "devDependencies": {
-    "lerna": "^2.10.1"
+    "@types/jest": "^22.2.3",
+    "jest": "^22.4.3",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.12.0",
+    "typescript": "^2.8.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
