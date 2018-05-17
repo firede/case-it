@@ -1,15 +1,22 @@
 {
   "name": "case-it",
+  "version": "1.0.0",
   "description": "camel/pascal/snake/constant/kebab/space case it.",
   "repository": "https://github.com/firede/case-it.git",
   "author": "Firede <firede@firede.us>",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "compile": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "prepublish": "yarn compile"
+    "clean": "rimraf dist",
+    "prepare": "yarn clean && yarn compile"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/jest": "^22.2.3",
     "husky": "^1.0.0-rc.6",
