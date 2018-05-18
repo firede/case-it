@@ -3,6 +3,8 @@
 [![npm](https://img.shields.io/npm/v/case-it.svg)](https://www.npmjs.com/package/case-it)
 [![Travis](https://img.shields.io/travis/firede/case-it.svg)](https://travis-ci.org/firede/case-it)
 [![License](https://img.shields.io/npm/l/case-it.svg)](./LICENSE.md)
+![npm bundle size(minified)](https://img.shields.io/bundlephobia/min/case-it.svg)
+![npm bundle size(minified + gzip)](https://img.shields.io/bundlephobia/minzip/case-it.svg)
 
 Simple case conversion for strings, ported from [`to-case`](https://github.com/ianstormtaylor/to-case).
 

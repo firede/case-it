@@ -1,6 +1,6 @@
 {
   "name": "case-it",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "{camel,constant,dot,kebab,pascal,snake,space} case it.",
   "repository": "https://github.com/firede/case-it.git",
   "author": "Firede <firede@firede.us>",
