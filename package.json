@@ -5,19 +5,21 @@
   "repository": "https://github.com/firede/case-it.git",
   "author": "Firede <firede@firede.us>",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "compile": "tsc",
     "flowgen": "node scripts/gen-flowtype.js",
     "build": "yarn compile && yarn flowgen",
     "watch": "tsc -w",
     "test": "jest",
-    "clean": "rimraf dist",
-    "prepare": "yarn clean && yarn build"
+    "clean": "rimraf dist *.js *.flow *.ts *.tgz",
+    "prepare": "yarn clean && yarn build && cp dist/* ."
   },
   "files": [
-    "dist"
+    "*.js",
+    "*.flow",
+    "*.ts"
   ],
   "devDependencies": {
     "@types/jest": "^22.2.3",

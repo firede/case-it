@@ -11,7 +11,7 @@ function genFlowDef(name) {
 
 function writeFlowDefFile(name, content) {
   const filepath = resolve(distPath, name + ".js.flow")
-  writeFileSync(filepath, content)
+  writeFileSync(filepath, "/* @flow strict */\n\n" + content)
 }
 
 // Main
