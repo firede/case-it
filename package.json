@@ -12,7 +12,7 @@
     "flowgen": "node scripts/gen-flowtype.js",
     "build": "yarn compile && yarn flowgen",
     "watch": "tsc -w",
-    "test": "jest",
+    "test": "jest --config jest.config.js",
     "clean": "rimraf dist *.js *.flow *.ts *.tgz",
     "prepare": "yarn clean && yarn build && cp dist/* ."
   },
