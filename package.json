@@ -12,9 +12,9 @@
     "flowgen": "node scripts/gen-flowtype.js",
     "build": "yarn compile && yarn flowgen",
     "watch": "tsc -w",
-    "test": "jest --config jest.config.js",
+    "test": "jest",
     "clean": "rimraf dist *.js *.flow *.ts *.tgz",
-    "prepare": "yarn clean && yarn build && cp dist/* ."
+    "prepack": "yarn clean && yarn build && cp dist/* ."
   },
   "files": [
     "*.js",
@@ -60,6 +60,13 @@
     "string",
     "convert"
   ],
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts$",
+    "moduleFileExtensions": ["ts", "js", "json"]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
