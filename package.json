@@ -22,17 +22,17 @@
     "*.ts"
   ],
   "devDependencies": {
-    "@types/jest": "^22.2.3",
+    "@types/jest": "^24.0.25",
     "flowgen": "^1.2.2",
-    "husky": "^1.0.0-rc.6",
-    "jest": "^22.4.3",
-    "lint-staged": "^7.1.0",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
     "prettier": "^1.12.1",
-    "rimraf": "^2.6.2",
-    "ts-jest": "^22.4.6",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.2.0",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.12.0",
-    "typescript": "^2.8.3"
+    "typescript": "^3.7.4"
   },
   "keywords": [
     "case",
@@ -65,7 +65,11 @@
       "^.+\\.ts$": "ts-jest"
     },
     "testRegex": "\\.test\\.ts$",
-    "moduleFileExtensions": ["ts", "js", "json"]
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
   },
   "husky": {
     "hooks": {
