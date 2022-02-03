@@ -1,7 +1,7 @@
 # [![case-it](res/header.png)](https://github.com/firede/case-it)
 
 [![npm](https://img.shields.io/npm/v/case-it.svg)](https://www.npmjs.com/package/case-it)
-[![Travis](https://img.shields.io/travis/firede/case-it.svg)](https://travis-ci.org/firede/case-it)
+![ci workflow](https://github.com/firede/case-it/actions/workflows/ci.yml/badge.svg)
 [![License](https://img.shields.io/npm/l/case-it.svg)](./LICENSE.md)
 ![npm bundle size(minified)](https://img.shields.io/bundlephobia/min/case-it.svg)
 ![npm bundle size(minified + gzip)](https://img.shields.io/bundlephobia/minzip/case-it.svg)
